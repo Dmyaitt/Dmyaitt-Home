@@ -11,8 +11,12 @@
         "LOG_LEVEL": "error",
         "DISABLE_CONSOLE_OUTPUT": "true",
         "N8N_API_URL": "https://dmyaitt.app.n8n.cloud",
-        "N8N_API_KEY": "YOUR_N8N_API_KEY_HERE"
+        "N8N_API_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5MzQ1MzUxZC0wYmYyLTQ0NmMtYjYyNi02OTI0MDY5Nzk0MDUiLCJpc3MiOiJuOG4iLCJhdWQiOiJwdWJsaWMtYXBpIiwiaWF0IjoxNzYxMjc1NzQyfQ.kRsX7x7v9OHaKV9tMn2xtFoav8TDIl0D-CWqxud4O4E"
       }
+    },
+    "n8n-workflows": {
+      "command": "node",
+      "args": ["C:\\Users\\Owner\\n8n-workflows-mcp\\server.js"]
     }
   }
 }

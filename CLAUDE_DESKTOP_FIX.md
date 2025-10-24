@@ -24,13 +24,16 @@ The location depends on your operating system:
    - **Option A**: Replace it with the new file (backup the old one first!)
    - **Option B**: Merge the configurations by copying the "n8n-mcp" section into your existing config
 
-### Step 3: Configure Your N8N API Key
+### Step 3: Verify Your N8N API Key (Already Configured)
 
+The `claude_desktop_config.json` file in this repository already has your n8n API key configured. No changes needed unless you want to update it.
+
+If you need to update your API key in the future:
 1. Open the `claude_desktop_config.json` file in the Claude Desktop config directory
-2. Find the line: `"N8N_API_KEY": "YOUR_N8N_API_KEY_HERE"`
-3. Replace `YOUR_N8N_API_KEY_HERE` with your actual n8n API key from https://dmyaitt.app.n8n.cloud
+2. Find the line: `"N8N_API_KEY": "..."`
+3. Replace it with your new n8n API key from https://dmyaitt.app.n8n.cloud
 
-To get your API key:
+To get a new API key:
 - Log in to your n8n instance at https://dmyaitt.app.n8n.cloud
 - Go to Settings → API
 - Create or copy your API key
@@ -80,7 +83,7 @@ To verify the configuration is working:
 
 ## Configuration File Reference
 
-The complete configuration file should look like this:
+The complete configuration file includes both MCP servers and should look like this:
 
 ```json
 {
@@ -98,10 +101,20 @@ The complete configuration file should look like this:
         "N8N_API_URL": "https://dmyaitt.app.n8n.cloud",
         "N8N_API_KEY": "your_actual_api_key_here"
       }
+    },
+    "n8n-workflows": {
+      "command": "node",
+      "args": ["C:\\Users\\Owner\\n8n-workflows-mcp\\server.js"]
     }
   }
 }
 ```
+
+**Note**: The configuration includes two MCP servers:
+1. **n8n-mcp**: Official n8n MCP server using npx (connects to your n8n cloud instance)
+2. **n8n-workflows**: Custom local workflow MCP server
+
+If you only need the n8n-mcp server, you can remove the "n8n-workflows" section.
 
 ## Date Updated
 
