@@ -2,6 +2,9 @@
 .mcp.json
 .claude/settings.json
 
+# Allow .claude/skills to be committed (no secrets)
+!.claude/skills/
+
 # Environment variables
 .env
 .env.local
