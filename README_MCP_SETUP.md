@@ -4,6 +4,17 @@
 
 This document summarizes the complete MCP (Model Context Protocol) environment setup for n8n integration with Claude Code.
 
+**🎯 New to this project? Start with [CLAUDE.md](./CLAUDE.md)** - It contains all the instructions for working with n8n workflows.
+
+### 🌟 Seamless Integration
+
+**Skills work seamlessly with n8n-mcp** to provide expert guidance throughout the workflow building process:
+
+- **n8n-mcp MCP server** provides 41 tools for workflow management and documentation
+- **7 expert skills** teach Claude how to use these tools correctly
+- Skills auto-activate based on your queries and work together
+- Claude Code automatically starts the MCP server when you begin a conversation
+
 ## 📦 Installed Components
 
 ### Core Dependencies
@@ -40,9 +51,11 @@ This document summarizes the complete MCP (Model Context Protocol) environment s
 
 ### Documentation
 ```
+CLAUDE.md                   # 🎯 START HERE - Main project instructions for Claude Code
 MCP_CONFIGURATION_GUIDE.md  # Complete setup and troubleshooting guide
-MCP_SETUP.md                # Original setup documentation
 README_MCP_SETUP.md         # This summary file
+MCP_SETUP.md                # Original setup documentation
+N8N_SKILLS_INSTALLATION.md  # n8n expert skills documentation
 ```
 
 ## 🔧 Configuration Hierarchy
